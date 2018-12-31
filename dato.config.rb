@@ -14,7 +14,6 @@ create_data_file "src/_data/settings.yml", :yaml,
   name: dato.site.global_seo.site_name,
   language: dato.site.locales.first,
   intro: dato.home.intro_text,
-  copyright: dato.home.copyright,
   social_profiles: social_profiles,
   favicon_meta_tags: dato.site.favicon_meta_tags
 

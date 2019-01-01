@@ -21,20 +21,28 @@
   </head>
   <body>
 
+  {% include header.html %}
 
-    <div class="container">
-      <div class="container__sidebar">
-        <div class="sidebar">
-          <h6 class="sidebar__title">
-            <a href="/index.html">
-              <img src="images/nomadlogo.svg" alt="{{ site.data.settings.name }}">
-            </a>
-          </h6>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="{{ cms.main.header_image.url }}" alt="">
+    </div>
+  </div>
 
-          <div class="sidebar__intro">
-            {{ site.data.settings.who }}
-            {{ site.data.settings.what }}
-          </div>
+  <div class="container sidebyside">
+    <span>
+      {{ site.data.settings.who }}
+    </span>
+    <span>
+      {{ site.data.settings.what }}
+    </span>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="{{ cms.main.header_image.url }}" alt="">
+    </div>
+  </div>
 
           <ul class="sidebar__menu">
             <li{% if page.url == "/"%} class="is-active"{% endif %}>

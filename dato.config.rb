@@ -34,6 +34,7 @@ create_post "src/about.md" do
     title: dato.about.title,
     image: dato.about.image.url(w: 800, fm: 'jpg', auto: 'compress'),
     layout: 'about',
+    permalink: /about/
     seo_settings: dato.about.seo_settings,
   }
 

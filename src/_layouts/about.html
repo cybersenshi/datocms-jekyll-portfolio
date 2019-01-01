@@ -2,16 +2,27 @@
 layout: default
 ---
 
-<article class="sheet">
-  <div class="sheet__inner">
-    <h1 class="sheet__title">{{ page.title }}</h1>
-    <p class="sheet__lead">{{ page.subtitle }}</p>
-    <div class="sheet__gallery">
-      <img src="{{ page.photo }}" />
-    </div>
-    <div class="sheet__body">
-      {{ page.content }}
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="{{ cms.about.image.url }}">
     </div>
   </div>
-</article>
-
+  <article class="container">
+    <h1>
+      {{ about.title }}
+    </h1>
+    <div class="sidebyside">
+      <div>
+        {{ about.text }}
+      </div>
+      <div>
+        {{ cms.about.location_map.html|safe }}
+        <span class="where">
+          <address>
+            3211 Colvin St.<br>
+            Alexandria, VA 22314
+          </address>
+          9:30 AM - 6 PM M-F
+        </span>
+      </div>
+  </article>

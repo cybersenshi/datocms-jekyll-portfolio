@@ -18,11 +18,12 @@
 <nav class="mainnav">
  <div class="nav-wrapper">
    <ul id="nav-mobile" class="right">
-    <li>
-      <a href="{{ "/" | relative_url }}">
-          Home
-        </a>
-    </li>
+     <li{% if page.url == "/"%} class="is-active"{% endif %}>
+       <a href="/">
+         Index
+       </a>
+     </li>
+
     <!--<li>
       <a href="{{ url('portfolio') }}">
           Portfolio
@@ -33,8 +34,8 @@
         Services
       </a>
     </li>
-    <li>
-      <a href="{{ url('about') }}">
+    <li{% if page.url == "/about"%} class="is-active"{% endif %}>
+      <a href="/about">
         About
       </a>
     </li>

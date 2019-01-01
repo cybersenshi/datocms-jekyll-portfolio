@@ -31,14 +31,13 @@ end
 # Create a markdown file from the content of the `about_page` item type
 create_post "src/about.md" do
   frontmatter :yaml, {
-    title: dato.about_page.title,
-    subtitle: dato.about_page.subtitle,
-    photo: dato.about_page.photo.url(w: 800, fm: 'jpg', auto: 'compress'),
+    title: dato.about.title,
+    image: dato.about.photo.url(w: 800, fm: 'jpg', auto: 'compress'),
     layout: 'about',
-    seo_meta_tags: dato.about_page.seo_meta_tags,
+    seo_meta_tags: dato.about.seo_meta_tags,
   }
 
-  content dato.about_page.bio
+  content dato.about.text
 end
 
 # Create a `_works` directory (or empty it if already exists)...

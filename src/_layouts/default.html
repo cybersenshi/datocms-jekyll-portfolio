@@ -7,9 +7,6 @@
 
     {% include head.html %}
 
-    {% if jekyll.environment == "production" %}
-      <link rel="stylesheet" href="/assets/all.css">
-    {% endif %}
     {% for tag in site.data.settings.favicon_meta_tags %}
       {{ tag | tagify }}
     {% endfor %}

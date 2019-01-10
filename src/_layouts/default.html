@@ -1,24 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.data.settings.language }}">
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-
-    {% include head.html %}
-
-
-      <link rel="stylesheet" href="{{ dato.site.baseurl }}/assets/all.css">
-      <link rel="stylesheet" href="/assets/tempus.css">
-
-    {% for tag in site.data.settings.favicon_meta_tags %}
-      {{ tag | tagify }}
-    {% endfor %}
-    {% if page.seo_meta_tags %}
-      {% for tag in page.seo_meta_tags %}
-        {{ tag | tagify }}
-      {% endfor %}
-    {% endif %}
+    
   </head>
   <body>
 

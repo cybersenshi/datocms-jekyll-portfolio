@@ -4,16 +4,16 @@ layout: default
 
   <div class="parallax-container">
     <div class="parallax">
-      <img src="{{ about.image }}">
+      <img src="{{ about.image.url }}">
     </div>
   </div>
   <article class="container">
     <h1>
-      {{ dato.about.title }}
+      {{ about.title }}
     </h1>
     <div class="sidebyside">
       <div>
-        {{ dato.about.text }}
+        {{ about.text }}
       </div>
       <div>
         {{ cms.about.location_map.html|safe }}

@@ -24,7 +24,7 @@ create_post "src/index.md" do
     seo_meta_tags: dato.home.seo_meta_tags,
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
-    layout: 'home',
+    layout: 'default',
     paginate: { collection: 'works', per_page: 5 }
   }
 end

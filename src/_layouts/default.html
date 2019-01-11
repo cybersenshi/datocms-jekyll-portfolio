@@ -7,23 +7,7 @@
 
   {% include header.html %}
 
-    <ul class="sidebar__menu">
-      <li{% if page.url == "/"%} class="is-active"{% endif %}>
-        <a href="/">Index</a>
-      </li>
-      <li{% if page.url == "/about.html"%} class="is-active"{% endif %}>
-        <a href="/about.html">About</a>
-      </li>
-    </ul>
-
-    <p class="sidebar__social">
-      {% for profile in site.data.settings.social_profiles %}
-        <a href="{{ profile.url }}" class="social social--{{ profile.type }}"></a>
-      {% endfor %}
-    </p>
-
-    {{ content }}
-
+  {{ content }}
 
 {% include footer.html %}
 
@@ -31,5 +15,6 @@
     {% if jekyll.environment == "development" %}
       <script src="http://localhost:5678/livereload.js"></script>
     {% endif %}
+
   </body>
 </html>

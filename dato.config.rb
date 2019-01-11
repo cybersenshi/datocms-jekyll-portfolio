@@ -24,7 +24,7 @@ create_post "src/index.md" do
     seo_meta_tags: dato.home.seo_meta_tags,
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
-    layout: 'default',
+    layout: 'home',
     paginate: { collection: 'works', per_page: 5 }
   }
 end
@@ -33,7 +33,7 @@ end
 create_post "src/about.md" do
   frontmatter :yaml, {
     title: dato.about.title,
-    image: dato.about.image.url,
+    image: dato.about.image.url(w: 800, fm: 'jpg', auto: 'compress'),
     layout: 'default',
     permalink: /about/,
     seo_settings: dato.about.seo_settings,

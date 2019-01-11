@@ -33,8 +33,8 @@ end
 create_post "src/about.md" do
   frontmatter :yaml, {
     title: dato.about.title,
-    image: dato.about.image.url(w: 800, fm: 'jpg', auto: 'compress'),
-    layout: 'about',
+    image: dato.about.image.url,
+    layout: 'default',
     permalink: /about/,
     seo_settings: dato.about.seo_settings,
   }

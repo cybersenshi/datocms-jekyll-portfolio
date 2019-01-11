@@ -7,63 +7,23 @@
 
   {% include header.html %}
 
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="{{ cms.main.header_image.url }}" alt="">
-    </div>
-  </div>
+    <ul class="sidebar__menu">
+      <li{% if page.url == "/"%} class="is-active"{% endif %}>
+        <a href="/">Index</a>
+      </li>
+      <li{% if page.url == "/about.html"%} class="is-active"{% endif %}>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
 
-  <div class="container sidebyside">
-    <span>
-      {{ site.data.settings.who }}
-    </span>
-    <span>
-      {{ site.data.settings.what }}
-    </span>
-  </div>
+    <p class="sidebar__social">
+      {% for profile in site.data.settings.social_profiles %}
+        <a href="{{ profile.url }}" class="social social--{{ profile.type }}"></a>
+      {% endfor %}
+    </p>
 
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="{{ cms.main.header_image.url }}" alt="">
-    </div>
-  </div>
+    {{ content }}
 
-          <ul class="sidebar__menu">
-            <li{% if page.url == "/"%} class="is-active"{% endif %}>
-              <a href="/">Index</a>
-            </li>
-            <li{% if page.url == "/about.html"%} class="is-active"{% endif %}>
-              <a href="/about.html">About</a>
-            </li>
-          </ul>
-
-          <p class="sidebar__social">
-            {% for profile in site.data.settings.social_profiles %}
-              <a href="{{ profile.url }}" class="social social--{{ profile.type }}"></a>
-            {% endfor %}
-          </p>
-
-          <div class="sidebar__copyright">
-
-          </div>
-        </div>
-      </div>
-      <div class="container__body">
-        <div class="container__mobile-header">
-          <div class="mobile-header">
-            <div class="mobile-header__menu">
-              <a href="#" data-js="toggleSidebar"></a>
-            </div>
-            <div class="mobile-header__logo">
-              <a href="/index.html">
-                {{ site.data.settings.name }}
-              </a>
-            </div>
-          </div>
-        </div>
-        {{ content }}
-      </div>
-    </div>
 
 {% include footer.html %}
 

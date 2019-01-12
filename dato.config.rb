@@ -43,41 +43,26 @@ create_post "src/about.md" do
   content dato.about.text
 end
 
- #Create a `_works` directory (or empty it if already exists)...
-directory "src/_testimonials" do
-   #...and for each of the works stored online...
-  dato.works.each_with_index do |testimonial, index|
-      #...create a markdown file with all the metadata in the frontmatter
-    create_post "#{testimonial.slug}.md" do
+# Create a `_works` directory (or empty it if already exists)...
+directory "src/_works" do
+  # ...and for each of the works stored online...
+  dato.works.each_with_index do |work, index|
+    # ...create a markdown file with all the metadata in the frontmatter
+    create_post "#{work.slug}.md" do
       frontmatter :yaml, {
         layout: 'work',
-        name: testimonial.name,
+        title: work.title,
+        cover_image: work.cover_image.url(w: 450, fm: 'jpg', auto: 'compress'),
+        detail_image: work.cover_image.url(w: 600, fm: 'jpg', auto: 'compress'),
+        position: index,
+        excerpt: work.excerpt,
+        seo_meta_tags: work.seo_meta_tags,
+        extra_images: work.gallery.map do |image|
+          image.url(h: 300, fm: 'jpg', auto: 'compress')
         end
       }
 
-      content testimonial.quote
+      content work.description
     end
-
-# Create a `_works` directory (or empty it if already exists)...
-#directory "src/_works" do
-  # ...and for each of the works stored online...
-  #dato.works.each_with_index do |work, index|
-    # ...create a markdown file with all the metadata in the frontmatter
-    #create_post "#{work.slug}.md" do
-      #frontmatter :yaml, {
-        #layout: 'work',
-        #title: work.title,
-        #cover_image: work.cover_image.url(w: 450, fm: 'jpg', auto: 'compress'),
-        #detail_image: work.cover_image.url(w: 600, fm: 'jpg', auto: 'compress'),
-        #position: index,
-        #excerpt: work.excerpt,
-        #seo_meta_tags: work.seo_meta_tags,
-        #extra_images: work.gallery.map do |image|
-        #  image.url(h: 300, fm: 'jpg', auto: 'compress')
-        #end
-      #}
-
-      #content work.description
-    #end
   end
 end

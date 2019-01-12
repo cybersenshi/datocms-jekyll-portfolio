@@ -12,7 +12,7 @@ end
 # Create a YAML data file to store global data about the site
 create_data_file "src/_data/settings.yml", :yaml,
   name: dato.site.global_seo.site_name,
-  logo: dato.site.logo.url,
+  logo: dato.header.logo.url,
   language: dato.site.locales.first,
   social_profiles: social_profiles,
   favicon_meta_tags: dato.site.favicon_meta_tags

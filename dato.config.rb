@@ -35,7 +35,6 @@ create_post "src/about.md" do
   frontmatter :yaml, {
     title: dato.about.title,
     image: dato.about.image.url,
-    latitude: dato.about.location.latitude,
     layout: 'about',
     permalink: /about/,
     seo_settings: dato.about.seo_settings,

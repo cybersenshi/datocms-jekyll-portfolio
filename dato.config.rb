@@ -12,7 +12,7 @@ end
 # Create a YAML data file to store global data about the site
 create_data_file "src/_data/settings.yml", :yaml,
   name: dato.site.global_seo.site_name,
-  logo: dato.header.logo,
+  logo: dato.site.logo.url,
   language: dato.site.locales.first,
   social_profiles: social_profiles,
   favicon_meta_tags: dato.site.favicon_meta_tags
@@ -21,6 +21,7 @@ create_data_file "src/_data/settings.yml", :yaml,
 # type stored in DatoCMS
 create_post "src/index.md" do
   frontmatter :yaml, {
+    title: dato.home.title,
     seo_meta_tags: dato.home.seo_meta_tags,
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
@@ -33,7 +34,7 @@ end
 create_post "src/about.md" do
   frontmatter :yaml, {
     title: dato.about.title,
-    image: dato.about.image.url(w: 800, fm: 'jpg', auto: 'compress'),
+    image: dato.about.image.url,
     layout: 'about',
     permalink: /about/,
     seo_settings: dato.about.seo_settings,

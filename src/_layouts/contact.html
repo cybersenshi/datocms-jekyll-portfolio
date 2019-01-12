@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{{ cms.about.image.url }}" alt="">
+  </div>
+</div>
+<article class="container">
+  <h1>
+    {{ cms.contact.name }}
+  </h1>
+  <ul>
+  <form method="POST" action="https://formspree.io/events@nomadevents.com">
+    <input type="hidden" name="_subject" value="Nomad Site Contact Form">
+    <input type="hidden" name="_next" value="http://nomadevents.com/contactlanding">
+    <li class="input-field">
+      <input id="name" type="text" name="Name" class="validate" required>
+      <label for="name">Name</label>
+    </li>
+    <li class="input-field">
+      <input id="company" type="text" name="Company" class="validate">
+      <label for="company">Company</label>
+    </li>
+    <li class="input-field">
+      <input id="phone" type="tel" name="Phone" class="validate" required>
+      <label for="phone">Phone</label>
+    </li>
+    <li class="input-field">
+      <input id="email" type="email" name="_replyto" class="validate" required>
+      <label for="email">Email</label>
+    </li>
+    <li class="input-field">
+      <input id="event_date" type="text" name="Event Date" class="datepicker">
+      <label for="event_date">
+        Event Date
+      </label>
+    </li>
+    <li class="input-field">
+      <input id="event_location" type="text" name="Event Location">
+      <label for="event_location">
+        Event Location
+      </label>
+    </li>
+    <li class="input-field">
+      <input id="expected_attendance" type="text" name="Expected Attendance">
+      <label for="expected_attendance">
+        Expected Attendance
+      </label>
+    </li>
+    <li class="input-field">
+      <textarea id="event_desc" name="Event Description" class="materialize-textarea"></textarea>
+      <label for="event_desc">
+        Event Description
+      </label>
+    </li>
+    <li class="input-field">
+      <select multiple name="I Know I Need">
+        <option value="" disabled selected>I know I need:</option>
+        <option value="Decor">Decor</option>
+        <option value="Lighting">Lighting</option>
+        <option value="Sound">Sound</option>
+        <option value="Staging">Staging</option>
+        <option value="Video">Video</option>
+      </select>
+      <label>
+        I know I need:
+      </label>
+    </li>
+    <li class="input-field">
+      <select multiple name="How Did You Hear About Nomad?">
+        <option value="" disabled selected>How did you hear about Nomad?</option>
+        <option value="Internet Search">Internet Search</option>
+        <option value="Newspaper">Newspaper</option>
+        <option value="Referral">Referral</option>
+        <option value="Social Media">Social Media</option>
+      </select>
+      <label>How did you hear about Nomad?</label>
+    </li>
+    <li>
+      <button type="submit" name="Submit" class="btn" >
+        Submit
+      </button>
+    </li>
+  </form>
+</ul>
+</article>

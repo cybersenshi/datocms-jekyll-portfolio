@@ -13,8 +13,12 @@ layout: default
   </h1>
   <ul>
   <form name="Nomad Site Contact Form" method="POST" netlify-honeypot="fake_field" data-netlify="true">
-    <input type="hidden" name="_subject" value="Nomad Site Contact Form">
-    <input type="hidden" name="_next" value="http://nomadevents.com/contactlanding">
+    <li class="hide">
+      <input name="fake-field">
+      <label>
+        Don’t fill this out if you're human.
+      </label>
+    </li>
     <li class="input-field">
       <input id="name" type="text" name="Name" class="validate" required>
       <label for="name">Name</label>

@@ -243,4 +243,8 @@ footer address {
 .sharenav a {
   color: #fff; }
 
+.hide {
+  display: none;
+  overflow: hidden; }
+
 /*# sourceMappingURL=main.css.map */

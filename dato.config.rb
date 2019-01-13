@@ -31,18 +31,6 @@ create_post "src/index.md" do
   }
 end
 
-create_post "src/services.md" do
-  frontmatter :yaml, {
-    title: dato.services.title,
-    image: dato.about.services.url,
-    layout: 'services',
-    permalink: /services/,
-    seo_settings: dato.services.seo_settings,
-  }
-
-  content dato.services.text
-end
-
 # Create a markdown file from the content of the `about_page` item type
 create_post "src/about.md" do
   frontmatter :yaml, {

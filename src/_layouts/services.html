@@ -1,3 +1,126 @@
 ---
 layout: default
 ---
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{{ cms.services.image.url }}">
+  </div>
+</div>
+
+<article class="container">
+  <h1>
+    {{ cms.services.name }}
+  </h1>
+  <div class="sidebyside sidebarfixed">
+
+    <div>
+      <div class="collection table-of-contents stickbar">
+        <a href="#audio" class="collection-item">Audio</a>
+        <a href="#lighting" class="collection-item">Lighting</a>
+        <a href="#video" class="collection-item">Video</a>
+        <a href="#staging" class="collection-item">Staging</a>
+      </div>
+    </div>
+
+    <div>
+      <hr>
+      <span id="audio" class="section scrollspy">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ cms.equipmentsound.image.url }}">
+            <span class="card-title">
+              <h3>
+                {{ cms.equipmentsound.name }}
+              </h3>
+            </span>
+          </div>
+        </div>
+        {{ cms.equipmentsound.introduction|safe }}
+        <ul class="gearlist">
+        {% for row in cms.equipmentsound.gear_list %}
+            <li>
+              {{ row.item }}
+            </li>
+        {% endfor %}
+        </ul>
+      </span>
+
+      <hr>
+      <span id="lighting" class="section scrollspy">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ cms.equipmentlighting.image.url }}">
+            <span class="card-title">
+              <h3>
+                {{ cms.equipmentlighting.name }}
+              </h3>
+            </span>
+          </div>
+        </div>
+        {{ cms.equipmentlighting.introduction|safe }}
+        <ul class="gearlist">
+        {% for row in cms.equipmentlighting.gear_list %}
+            <li>
+              {{ row.item }}
+            </li>
+        {% endfor %}
+        </ul>
+        <!--<ul class="gearlist">
+          {% for relation in cms.equipmentlighting.service_types %}
+            <li>
+              {{ relation.name }}
+            </li>
+            {% if not loop.last %}
+            {% endif %}
+          {% endfor %}
+        </ul>-->
+      </span>
+
+      <hr>
+      <span id="video" class="section scrollspy">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ cms.equipmentvideo.image.url }}">
+            <span class="card-title">
+              <h3>
+                {{ cms.equipmentvideo.name }}
+              </h3>
+            </span>
+          </div>
+        </div>
+        {{ cms.equipmentvideo.introduction|safe }}
+        <ul class="gearlist">
+        {% for row in cms.equipmentvideo.gear_list %}
+            <li>
+              {{ row.item }}
+            </li>
+        {% endfor %}
+        </ul>
+      </span>
+
+      <hr>
+      <span id="staging" class="section scrollspy">
+        <div class="card scrollspy">
+          <div class="card-image">
+            <img src="{{ cms.equipmentstaging.image.url }}">
+            <span class="card-title">
+              <h3>
+                {{ cms.equipmentstaging.name }}
+              </h3>
+            </span>
+          </div>
+        </div>
+        {{ cms.equipmentstaging.introduction|safe }}
+        <ul class="gearlist">
+        {% for row in cms.equipmentstaging.gear_list %}
+            <li>
+              {{ row.item }}
+            </li>
+        {% endfor %}
+        </ul>
+      </span>
+    </div>
+  </div>
+
+</article>

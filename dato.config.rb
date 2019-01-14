@@ -56,6 +56,18 @@ create_post "src/contact.md" do
   content dato.about.text
 end
 
+create_post "src/services.md" do
+  frontmatter :yaml, {
+    title: dato.services.title,
+    image: dato.services.image.url,
+    layout: 'services',
+    permalink: /services/,
+    seo_settings: dato.services.seo_settings,
+  }
+
+  content dato.services.text
+end
+
 # Create a `_works` directory (or empty it if already exists)...
 directory "src/_works" do
   # ...and for each of the works stored online...

@@ -211,8 +211,8 @@ footer address {
   align-content: center;
   justify-content: space-around; }
 
-.embedly-embed {
-  width: 350px; }
+.embed {
+  max-width: 40%; }
 
 .where {
   padding: 2em; }

@@ -26,7 +26,7 @@ create_post "src/index.md" do
     image: dato.home.image.url(h: 600, fm: :png),
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
-    image2: dato.home.second_image.url,
+    image2: dato.home.second_image.url(h: 600, fm: :png),
     layout: 'home',
     paginate: { collection: 'works', per_page: 5 }
   }
@@ -36,7 +36,7 @@ end
 create_post "src/about.md" do
   frontmatter :yaml, {
     title: dato.about.title,
-    image: dato.about.image.url,
+    image: dato.about.image.url(h: 600, fm: :png),
     layout: 'about',
     permalink: /about/,
     seo_settings: dato.about.seo_settings,
@@ -48,7 +48,7 @@ end
 create_post "src/contact.md" do
   frontmatter :yaml, {
     title: dato.contact.title,
-    image: dato.contact.image.url,
+    image: dato.contact.image.url(h: 600, fm: :png),
     layout: 'contact',
     permalink: /contact/,
     seo_settings: dato.contact.seo_settings,
@@ -60,7 +60,7 @@ end
 create_post "src/services.md" do
   frontmatter :yaml, {
     title: dato.service.title,
-    image: dato.service.image.url,
+    image: dato.service.image.url(h: 600, fm: :png),
     layout: 'services',
     permalink: /services/,
     seo_settings: dato.service.seo_settings,

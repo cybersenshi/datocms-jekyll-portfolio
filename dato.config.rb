@@ -57,7 +57,7 @@ create_post "src/contact.md" do
   content dato.about.text
 end
 
-create_post "src/contact_landing.md" do
+create_post "src/contactlanding.md" do
   frontmatter :yaml, {
     title: dato.contact_landing.title,
     image: dato.contact_landing.image.url(h: 500, fm: :png),
@@ -65,7 +65,7 @@ create_post "src/contact_landing.md" do
     permalink: /contactlanding/,
   }
 
-  contact_landing dato.about.text
+  content dato.contact_landing.text
 end
 
 create_post "src/services.md" do

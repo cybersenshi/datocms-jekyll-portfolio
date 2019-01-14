@@ -58,14 +58,14 @@ end
 
 create_post "src/services.md" do
   frontmatter :yaml, {
-    title: dato.services.title,
-    image: dato.services.image.url,
+    title: dato.service.title,
+    image: dato.service.image.url,
     layout: 'services',
     permalink: /services/,
-    seo_settings: dato.services.seo_settings,
+    seo_settings: dato.service.seo_settings,
   }
 
-  content dato.services.text
+  content dato.service.text
 end
 
 # Create a `_works` directory (or empty it if already exists)...

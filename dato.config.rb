@@ -23,7 +23,7 @@ create_post "src/index.md" do
   frontmatter :yaml, {
     title: dato.home.title,
     seo_meta_tags: dato.home.seo_meta_tags,
-    image: dato.home.image.url,
+    image: dato.home.image.url(h: 600, fm: :png),
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
     image2: dato.home.second_image.url,

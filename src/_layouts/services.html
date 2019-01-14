@@ -4,13 +4,13 @@ layout: default
 
 <div class="parallax-container">
   <div class="parallax">
-    <img src="{{ cms.services.image.url }}">
+    <img src="{{ page.image | prepend: site.baseurl }}" alt="">
   </div>
 </div>
 
 <article class="container">
   <h1>
-    {{ cms.services.name }}
+    {{ page.title }}
   </h1>
   <div class="sidebyside sidebarfixed">
 
@@ -28,21 +28,46 @@ layout: default
       <span id="audio" class="section scrollspy">
         <div class="card">
           <div class="card-image">
-            <img src="{{ cms.equipmentsound.image.url }}">
+            <img src="/webhook-uploads/1543684580220/24174768_1966259893414135_2026939412243283968_n.jpg">
             <span class="card-title">
               <h3>
-                {{ cms.equipmentsound.name }}
+                Audio
               </h3>
             </span>
           </div>
         </div>
-        {{ cms.equipmentsound.introduction|safe }}
+        <p>Every event is unique and will have its own set of audio challenges. Whether you require flyable speaker systems, on-stage monitor systems, feeds for media and broadcast, or clear audio for your CEO's address -- we have the experience and inventory to cover all of your audio needs and can design a system to meet the specifics of your event.
+</p>
         <ul class="gearlist">
-        {% for row in cms.equipmentsound.gear_list %}
+
             <li>
-              {{ row.item }}
+              State-of-the-art equipment by Digidesign, Yamaha, Midas, EAW, Klarkteknik, and others
             </li>
-        {% endfor %}
+
+            <li>
+              Line Array / Flyable speaker systems
+            </li>
+
+            <li>
+              Distributed speaker systems
+            </li>
+
+            <li>
+              Digital and Analog Consoles
+            </li>
+
+            <li>
+              Wireless, hard-wired, podium, band, and shotgun mic systems
+            </li>
+
+            <li>
+              Monitor systems
+            </li>
+
+            <li>
+              A FULL staff of audio engineers who can&#39;t wait to mix your next event
+            </li>
+
         </ul>
       </span>
 
@@ -50,30 +75,74 @@ layout: default
       <span id="lighting" class="section scrollspy">
         <div class="card">
           <div class="card-image">
-            <img src="{{ cms.equipmentlighting.image.url }}">
+            <img src="/webhook-uploads/1543694177085/26266302_1168491669951009_4347102430832361472_n.jpg">
             <span class="card-title">
               <h3>
-                {{ cms.equipmentlighting.name }}
+                Lighting
               </h3>
             </span>
           </div>
         </div>
-        {{ cms.equipmentlighting.introduction|safe }}
+        <p>Whether lighting is used for setting moods or to showcase an important part of your event, it is one element of an event that people always remember. We carry a wide range of lighting and rigging products including truss systems, chain motors, conventional and moving lights, dimmer rack systems, uplighting and pinspots. Our lighting team will help you design the look you are after. We also make custom gobos (your organization's logo etched in metal or glass) to project on walls or set pieces.
+</p>
         <ul class="gearlist">
-        {% for row in cms.equipmentlighting.gear_list %}
+
             <li>
-              {{ row.item }}
+              Moving light fixtures
             </li>
-        {% endfor %}
+
+            <li>
+              Source four fixtures
+            </li>
+
+            <li>
+              PAR lighting
+            </li>
+
+            <li>
+              Genie towers
+            </li>
+
+            <li>
+              Trussing
+            </li>
+
+            <li>
+              Pipe &amp; Base
+            </li>
+
+            <li>
+              Pinspots
+            </li>
+
+            <li>
+              DJ lights / mirror balls
+            </li>
+
+            <li>
+              Lighting controllers
+            </li>
+
         </ul>
         <!--<ul class="gearlist">
-          {% for relation in cms.equipmentlighting.service_types %}
+
             <li>
-              {{ relation.name }}
+              Concerts
             </li>
-            {% if not loop.last %}
-            {% endif %}
-          {% endfor %}
+
+
+
+            <li>
+              Festivals
+            </li>
+
+
+
+            <li>
+              Fashion shows
+            </li>
+
+
         </ul>-->
       </span>
 
@@ -81,21 +150,54 @@ layout: default
       <span id="video" class="section scrollspy">
         <div class="card">
           <div class="card-image">
-            <img src="{{ cms.equipmentvideo.image.url }}">
+            <img src="/webhook-uploads/1543688030306/24124951_510797719299409_6681603184126853120_n.jpg">
             <span class="card-title">
               <h3>
-                {{ cms.equipmentvideo.name }}
+                Video
               </h3>
             </span>
           </div>
         </div>
-        {{ cms.equipmentvideo.introduction|safe }}
+        <p>Video is a critical tool when you are trying to get your message across.	Whether you need to project your Powerpoint presentation for a meeting, provide an IMAG to an audience of several thousand people, or create a visual sensation for the audience -- our visual personnel have the experience and creativity when putting together your video production. As with all of the production elements, we custom design your video system to best meet the needs of your particular event.
+</p>
         <ul class="gearlist">
-        {% for row in cms.equipmentvideo.gear_list %}
+
             <li>
-              {{ row.item }}
+              IMAG (Image Magnification)
             </li>
-        {% endfor %}
+
+            <li>
+              Projection
+            </li>
+
+            <li>
+              Multi-Camera shoots
+            </li>
+
+            <li>
+              Video recording
+            </li>
+
+            <li>
+              Post Production Video Editing
+            </li>
+
+            <li>
+              Webcasting
+            </li>
+
+            <li>
+              Video Display Monitors
+            </li>
+
+            <li>
+              LCD &amp;DLP Projectors 1,500 to 20,000 lumens
+            </li>
+
+            <li>
+              Switchers
+            </li>
+
         </ul>
       </span>
 
@@ -103,21 +205,54 @@ layout: default
       <span id="staging" class="section scrollspy">
         <div class="card scrollspy">
           <div class="card-image">
-            <img src="{{ cms.equipmentstaging.image.url }}">
+            <img src="/webhook-uploads/1543686770021/25037469_185573152032990_3785922313174646784_n.jpg">
             <span class="card-title">
               <h3>
-                {{ cms.equipmentstaging.name }}
+                Staging
               </h3>
             </span>
           </div>
         </div>
-        {{ cms.equipmentstaging.introduction|safe }}
+        <p>Sometimes staging is the element that defines an event. We carry a wide range of staging to meet any application including: Modular or mobile stages, roofing systems, and hard sets. Our modular stages can be carpeted or covered with a variety of surfaces. We also carry an extensive inventory of pipe &amp; drape and soft goods.
+</p>
         <ul class="gearlist">
-        {% for row in cms.equipmentstaging.gear_list %}
+
             <li>
-              {{ row.item }}
+              Stage Set
             </li>
-        {% endfor %}
+
+            <li>
+              Backdrops
+            </li>
+
+            <li>
+              Pipe &amp; Drape
+            </li>
+
+            <li>
+              Podiums
+            </li>
+
+            <li>
+              Generators
+            </li>
+
+            <li>
+              Power distribution systems
+            </li>
+
+            <li>
+              Yellow Jackets
+            </li>
+
+            <li>
+              Speaker Scaffolding
+            </li>
+
+            <li>
+              Dance Floors
+            </li>
+
         </ul>
       </span>
     </div>

@@ -212,7 +212,7 @@ footer address {
   justify-content: space-around; }
 
 .embed {
-  max-width: 40%; }
+  width: 350px; }
 
 .where {
   padding: 2em; }

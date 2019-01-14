@@ -26,6 +26,7 @@ create_post "src/index.md" do
     image: dato.home.image.url,
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
+    image2: dato.home.second_image.url,
     layout: 'home',
     paginate: { collection: 'works', per_page: 5 }
   }

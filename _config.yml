@@ -4,9 +4,6 @@ markdown: kramdown
 source: "src"
 destination: "public"
 
-collections:
-  - portfolios
-
 gems:
   - octopress-paginate
 

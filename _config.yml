@@ -5,8 +5,7 @@ source: "src"
 destination: "public"
 
 collections:
-  works:
-    output: true
+  - portfolios
 
 gems:
   - octopress-paginate

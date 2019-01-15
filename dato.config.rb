@@ -85,7 +85,7 @@ directory "src/_portfolios" do
   # ...and for each of the works stored online...
   dato.portfolios.each_with_index do |portfolio, index|
     # ...create a markdown file with all the metadata in the frontmatter
-    create_post "#{portfolio.image.url}.md" do
+    create_post "#{portfolio.title}.md" do
       frontmatter :yaml, {
         layout: 'default',
         image: portfolio.image.url(w: 450, fm: 'jpg', auto: 'compress'),

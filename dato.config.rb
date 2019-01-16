@@ -79,3 +79,8 @@ create_post "src/services.md" do
 
   content dato.service.text
 end
+
+portfolio_gallery.gallery.each do |image|
+  image.title   # => "We love our clients"
+  image.url     # => "https://www.datocms-assets.com/123/12345-heart.png"
+end

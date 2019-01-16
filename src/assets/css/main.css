@@ -255,7 +255,10 @@
     padding-right: 2em; }
 
   .sharenav a {
-    color: #fff; } }
+    color: #fff; }
+
+  .btnpad {
+    margin-top: 1rem; } }
 @media screen and (max-device-width: 360px) {
   .mainnav {
     display: none;

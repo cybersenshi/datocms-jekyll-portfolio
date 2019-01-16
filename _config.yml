@@ -4,11 +4,8 @@ markdown: kramdown
 source: "src"
 destination: "public"
 
-#
-=begin
-gems:
-  - octopress-paginate
-=end
+#gems:
+#  - octopress-paginate
 
 exclude:
   - node_modules

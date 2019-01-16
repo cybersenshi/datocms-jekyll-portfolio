@@ -82,14 +82,14 @@ end
 
 create_post "src/portfolio.md" do
   frontmatter :yaml, {
-    title: dato.portfolio.title,
-    image: dato.portfolio.image.url(h: 500, fm: :png),
+    title: dato.portfolios.title,
+    image: dato.portfolios.image.url(h: 500, fm: :png),
     layout: 'portfolio',
     permalink: /portfolio/,
-    seo_settings: dato.portfolio.seo_settings,
+    seo_settings: dato.portfolios.seo_settings,
   }
 
-  content dato.portfolio.portfolio_gallery
+  content dato.portfolios.portfolio_gallery
 end
 
 portfolio_gallery.gallery.each do |image|

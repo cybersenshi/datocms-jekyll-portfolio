@@ -12,7 +12,7 @@ layout: default
     {{ page.title }}
   </h1>
   <ul>
-  <form name="Nomad Site Contact Form" method="POST" netlify-honeypot="important" data-netlify="true" action="/contactlanding/">
+  <form name="Nomad Site Contact Form" method="POST" netlify-honeypot="important" data-netlify="true" action="/contactlanding/" subject="Site Contact Form Submission">
     <li class="hide">
       <input name="important">
       <label></label>
@@ -80,6 +80,7 @@ layout: default
       </select>
       <label>How did you hear about Nomad?</label>
     </li>
+    <li data-netlify-recaptcha="true"></li>
     <li>
       <button type="submit" name="Submit" class="btn" >
         Submit

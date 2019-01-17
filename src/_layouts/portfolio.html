@@ -12,10 +12,11 @@ layout: default
     {{ page.title }}
   </h1>
       {{ page.content }}
-      {% for portfolio-item in portfolio-items %}
+      {% assign portfolio_item = site.portfolio_items %}
+      {% for portfolio_item in portfolio_items %}
 
-        {{ portfolio-item.location }}
-        {{ portfolio-item.photo }}
+        {{ portfolio_item.location }}
+        {{ portfolio_item.photo }}
 
       {% endfor %}
 </article>

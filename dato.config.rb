@@ -96,7 +96,7 @@ directory "_portfolio" do
   dato.portfolio_items.each do |portfolio|
     create_post "#{portfolio.location.parameterize}.md" do
       frontmatter :yaml, {
-        layout: "portfolio",
+        layout: "portfolio-items",
         location: portfolio.location,
         photo: portfolio.photo.url,
       }

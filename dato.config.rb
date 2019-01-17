@@ -80,8 +80,8 @@ create_post "src/services.md" do
   content dato.service.text
 end
 
-directory "portfolios" do
-  dato._portfolios.each do |item|
+directory "_portfolios" do
+  dato.portfolios.each do |item|
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "portfolio",

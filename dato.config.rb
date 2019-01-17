@@ -85,8 +85,8 @@ directory "_portfolios" do
     create_post "#{item.title.parameterize}.md" do
       frontmatter :yaml, {
         layout: "portfolio",
-        title: item.title,
-        image: item.image.url
+        title: item.location,
+        image: item.photo.url
       }
       content item.text
     end

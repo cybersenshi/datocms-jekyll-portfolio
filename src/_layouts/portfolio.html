@@ -2,9 +2,33 @@
 layout: default
 ---
 
-{% for portfolio in site.portfolios %}
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{{ page.image | prepend: site.baseurl }}" alt="">
+  </div>
+</div>
+<article class="container">
+  <h1>
+    {{ page.title }}
+  </h1>
+  <div class="sidebyside">
+    <div>
+      {{ page.content }}
+      {% for portfolio-item in site.portfolio-items %}
 
-  {{ portfolio.location }}
-  {{ portfolio.photo }}
+        {{ portfolio-item.location }}
+        {{ portfolio-item.photo }}
 
-{% endfor %}
+      {% endfor %}
+    </div>
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.0987184568035!2d-77.08779548499385!3d38.80729127958469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b2ed17720d2d%3A0xbe874d08b33ce7b1!2sNomad+Event+Systems!5e0!3m2!1sen!2sus!4v1547482567494" class="embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <span class="where">
+        <address>
+          3211 Colvin St.<br>
+          Alexandria, VA 22314
+        </address>
+        9:30 AM - 6 PM M-F
+      </span>
+    </div>
+</article>

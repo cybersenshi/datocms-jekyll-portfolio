@@ -82,7 +82,7 @@ end
 
 directory "_portfolios" do
   dato.portfolios.each do |item|
-    create_post "#{item.title.parameterize}.md" do
+    create_post "#{item.location.parameterize}.md" do
       frontmatter :yaml, {
         layout: "portfolio",
         title: item.location,

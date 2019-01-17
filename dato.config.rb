@@ -80,19 +80,15 @@ create_post "src/services.md" do
   content dato.service.text
 end
 
-create_post "src/portfolio.md" do
-  frontmatter :yaml, {
-    title: dato.portfolios.title,
-    image: dato.portfolios.image.url(h: 500, fm: :png),
-    layout: 'portfolio',
-    permalink: /portfolio/,
-    seo_settings: dato.portfolios.seo_settings,
-  }
-
-  content dato.portfolios.portfolio_gallery
-end
-
-portfolio_gallery.gallery.each do |image|
-  image.title   # => "We love our clients"
-  image.url     # => "https://www.datocms-assets.com/123/12345-heart.png"
+directory "_portfolios" do
+  dato._portfolios.each do |item|
+    create_post "#{item.title.parameterize}.md" do
+      frontmatter :yaml, {
+        layout: "portfolio",
+        title: item.title,
+        image: item.image.url
+      }
+      content item.text
+    end
+  end
 end

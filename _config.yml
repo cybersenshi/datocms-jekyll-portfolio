@@ -4,6 +4,11 @@ markdown: kramdown
 source: "src"
 destination: "public"
 
+collections:
+  portfolios:
+    output: true
+    permalink: /portfolio/:path/
+
 #gems:
 #  - octopress-paginate
 

@@ -98,8 +98,8 @@ directory "_portfolio" do
       frontmatter :yaml, {
         layout: "portfolio",
         position: portfolio,
-        title: item.location,
-        image: item.photo.url,
+        location: item.location,
+        photo: item.photo.url,
       }
       content item.text
     end

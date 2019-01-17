@@ -98,8 +98,9 @@
   .dropdown-content li > a, .dropdown-content li > span {
     background-color: #fff; }
 
-  .sidenav {
-    font-size: 2rem; }
+  .sidenav li > a {
+    font-family: "Tempus Sans ITC", sans-serif;
+    font-size: 18px; }
 
   article {
     padding-bottom: 2em; }

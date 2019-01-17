@@ -98,6 +98,9 @@
   .dropdown-content li > a, .dropdown-content li > span {
     background-color: #fff; }
 
+  .sidenav {
+    font-size: 2rem; }
+
   article {
     padding-bottom: 2em; }
 

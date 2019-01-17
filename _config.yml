@@ -5,7 +5,7 @@ source: "src"
 destination: "public"
 
 collections:
-  portfolios:
+  portfolio:
     output: true
     permalink: /portfolio/:path/
 

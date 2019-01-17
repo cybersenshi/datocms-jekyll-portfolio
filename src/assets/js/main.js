@@ -9,6 +9,7 @@ $(document).ready(function(){
   });
   $('select').formSelect();
   $('.scrollspy').scrollSpy();
+  $('.materialboxed').materialbox();
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });

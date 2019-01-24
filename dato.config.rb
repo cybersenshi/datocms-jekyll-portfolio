@@ -28,7 +28,7 @@ create_post "src/index.md" do
     what: dato.home.what_we_do,
     image2: dato.home.second_image.url(h: 500, fm: :png),
     layout: 'home',
-    redirect_from: "dc-event-production-services",
+    redirect_from: "/dc-event-production-services",
     paginate: { collection: 'works', per_page: 5 }
   }
 end
@@ -41,7 +41,7 @@ create_post "src/about.md" do
     layout: 'about',
     permalink: /about/,
     seo_settings: dato.about.seo_settings,
-    redirect_from: "about-nomad-events",
+    redirect_from: "/about-nomad-events",
   }
 
   content dato.about.text
@@ -54,7 +54,7 @@ create_post "src/contact.md" do
     layout: 'contact',
     permalink: /contact/,
     seo_settings: dato.contact.seo_settings,
-    redirect_from: "contact-nomad-events",
+    redirect_from: "/contact-nomad-events",
   }
 
   content dato.about.text

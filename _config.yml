@@ -1,5 +1,5 @@
 baseurl: ""
-url: "/"
+url: "http://nomadevents.com"
 markdown: kramdown
 source: "src"
 destination: "public"

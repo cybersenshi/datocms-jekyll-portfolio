@@ -6,6 +6,7 @@ destination: "public"
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
 #  - octopress-paginate
 
 exclude:

@@ -3,4 +3,5 @@ ruby "2.4.3"
 
 gem "jekyll"
 gem "dato"
-gem "octopress-paginate"
+gem "jekyll-redirect-from"
+#gem "octopress-paginate"

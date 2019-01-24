@@ -4,7 +4,8 @@ markdown: kramdown
 source: "src"
 destination: "public"
 
-#gems:
+gems:
+  - jekyll-redirect-from
 #  - octopress-paginate
 
 exclude:

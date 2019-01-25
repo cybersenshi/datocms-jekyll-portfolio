@@ -34,8 +34,7 @@ layout: default
       </li>
     </ul>
 
-    {% assign portfolio_items = site.portfolio_items %}
-    {% for portfolio_item in portfolio_items limit: 10 %}
+    {% for portfolio_item in paginator.portfolio_items %}
         <img src="{{ portfolio_item.photo.url }}">
     {% endfor %}
 </article>

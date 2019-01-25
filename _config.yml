@@ -5,8 +5,7 @@ source: "src"
 destination: "public"
 
 collections:
-  - portfolio_items:
-     output: true
+  - portfolio_items
 
 gems:
   - jekyll-redirect-from

@@ -34,7 +34,7 @@ layout: default
       </li>
     </ul>
 
-    {% for portfolio_item in site.portfiolio_items limit: 10 %}
+    {% for portfolio_item in site.portfolio_items %}
         <img src="{{ portfolio_item.photo.url }}">
     {% endfor %}
 </article>

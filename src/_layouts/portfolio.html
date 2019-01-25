@@ -34,7 +34,7 @@ layout: default
       </li>
     </ul>
 
-    {% for portfolio_item in paginator.portfolio_items %}
-        <img src="{{ portfolio_item.photo }}">
+    {% for item in items %}
+        <img src="{{ item.location }}">
     {% endfor %}
 </article>

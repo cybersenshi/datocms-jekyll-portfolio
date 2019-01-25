@@ -36,6 +36,6 @@ layout: default
 
     {% assign portfolio_item = site.portfolio_items %}
     {% for portfolio_item in portfiolio_items limit: 10 %}
-        <img src="{{ portfolio_item.thumbnail_url }}">
+        <img src="{{ portfolio_item.photo.url }}">
     {% endfor %}
 </article>

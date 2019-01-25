@@ -90,6 +90,7 @@ create_post "src/portfolio.md" do
     layout: 'portfolio',
     permalink: /portfolio/,
     seo_settings: dato.portfolio.seo_settings,
+    paginate: true,
   }
 
   content dato.service.text

@@ -34,4 +34,8 @@ layout: default
       </li>
     </ul>
 
+    {% assign portfolio_item = site.portfolio_items | sort: 'weight' %}
+    {% for portfolio_item in portfiolio_items limit: 10 %}
+        <img src="{{ portfolio_item.thumbnail_url }}">
+    {% endfor %}
 </article>

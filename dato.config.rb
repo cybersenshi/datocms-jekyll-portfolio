@@ -29,7 +29,6 @@ create_post "src/index.md" do
     image2: dato.home.second_image.url(h: 500, fm: :png),
     layout: 'home',
     redirect_from: "/dc-event-production-services",
-    paginate: { collection: 'works', per_page: 5 }
   }
 end
 
@@ -90,6 +89,7 @@ create_post "src/portfolio.md" do
     layout: 'portfolio',
     permalink: /portfolio/,
     seo_settings: dato.portfolio.seo_settings,
+    paginate: { collection: 'portfolio_items', per_page: 10 },
   }
 
   content dato.service.text

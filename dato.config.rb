@@ -95,13 +95,13 @@ create_post "src/portfolio.md" do
   content dato.service.text
 end
 
-dato.portfolio_items.each do |record|
+dato.portfolio_item.each do |record|
     create_post "#{dato.portfolio_item.location}.md" do
       frontmatter :yaml, {
         layout: "portfolio",
         location: dato.portfolio_item.location,
         photo: dato.portfolio_item.photo.url(h: 600, fm: :png),
       }
-      content portfolio_item.text
+      content dato.portfolio_item.text
     end
   end

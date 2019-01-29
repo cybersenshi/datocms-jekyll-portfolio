@@ -97,7 +97,7 @@ end
 
 directory "_portfolio" do
   dato.portfolio_items.each_with_index do |item, index|
-      create_post "#{item.location}.md" do
+      create_post "#{item.slug}.md" do
         frontmatter :yaml, {
           location: item.location,
           position: index,

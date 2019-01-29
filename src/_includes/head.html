@@ -14,6 +14,7 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 <script src="/assets/js/main.js"></script>
+
 <script>
   var quotes = [
     '<h4>"It was very pleasant working with such a professional staff. You knew exactly what we wanted and needed to make our Marathon a hit. Everything was done quickly and in a professional manner.</h4>- Ken Delahoussaye, Marine Corps Logistics Manager',
@@ -22,7 +23,7 @@
     '<h4>"I wanted to thank all of you for another job well done!  Each of you in your own expertise, including the staff that supports you, helped to make the HP event with the One Republic concert another great success for our client."</h4>- Steve Oliker, Event Producer',
     '<h4>"I can't thank you enough for all that you did last night - it exceeded my expectations!!! Absolutely awesome. Everyone was talking about the lighting and "images", including our director. And the fireworks - perfect! They loved it."</h4>- Tina Karl, Special Events Manager, Natural History Museum',
   ];
-  $(+ quotes[Math.floor(Math.random() * quotes.length)] +).appendTo('.quoteholder');
+  $(+ quotes[Math.floor(Math.random() * quotes.length)] +).appendTo('#quoteholder');
 </script>
 
 {% for tag in site.data.settings.favicon_meta_tags %}

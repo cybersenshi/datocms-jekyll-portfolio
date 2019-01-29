@@ -34,7 +34,7 @@ layout: default
       </li>
     </ul>
 
-    {% for item in page.gallery %}
-        <img class="materialboxed" data-caption="{{ item.image.title }}" width="250" height="150" src="{{ item.image.url }}">
+    {% for record in page.gallery %}
+        <img class="materialboxed" data-caption="{{ record.image.title }}" width="250" height="150" src="{{ record.image.url }}">
     {% endfor %}
 </article>

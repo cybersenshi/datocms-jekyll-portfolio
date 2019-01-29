@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.lazy').Lazy();
   $('.parallax').parallax();
   $(".dropdown-trigger").dropdown({
     coverTrigger: false,

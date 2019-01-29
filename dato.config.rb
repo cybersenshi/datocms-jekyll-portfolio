@@ -88,9 +88,15 @@ create_post "src/portfolio.md" do
     image: dato.portfolio.image.url(h: 500, fm: :png),
     layout: 'portfolio',
     permalink: /portfolio/,
+    gallery: dato.portfolio.gallery,
     seo_settings: dato.portfolio.seo_settings,
     paginate: { collection: 'portfolio_items', per_page: 10 },
   }
+
+  dato.portfolio.gallery.each do |image|
+  image.title   # => "We love our clients"
+  image.url     # => "https://www.datocms-assets.com/123/12345-heart.png"
+end
 
   content dato.service.text
 end
@@ -101,6 +107,7 @@ directory "_portfolio" do
         frontmatter :yaml, {
           location: item.location,
           position: index,
+          number: item.number,
           photo: item.photo.url(h: 600, fm: :png),
         }
         content item.text

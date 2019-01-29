@@ -34,7 +34,7 @@ layout: default
       </li>
     </ul>
 
-    {% for item in paginator.portfolio_items %}
-        <img class="materialboxed" data-caption="{{ item.text }}" width="250" height="150" src="{{ item.location }}">
+    {% for item in page.gallery %}
+        <img class="materialboxed" data-caption="{{ item.image.title }}" width="250" height="150" src="{{ item.image.url }}">
     {% endfor %}
 </article>

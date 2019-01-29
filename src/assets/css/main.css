@@ -70,7 +70,7 @@
     box-shadow: none; }
 
   .mainnav a {
-    color: whitesmoke;
+    color: #fff;
     opacity: 1; }
 
   .mainnav ul {
@@ -89,14 +89,14 @@
   .menupad {
     padding: 1em;
     background-color: #4ea443;
-    color: whitesmoke; }
+    color: #fff; }
 
   ul.dropdown-content {
     padding-left: 0px;
     border-radius: 0px; }
 
   .dropdown-content li > a, .dropdown-content li > span {
-    background-color: whitesmoke; }
+    background-color: #fff; }
 
   .sidenav li > a {
     font-family: "Tempus Sans ITC", sans-serif;
@@ -110,7 +110,7 @@
     max-width: 50%;
     padding-top: 10px;
     padding-left: 30px;
-    background-color: whitesmoke;
+    background-color: #fff;
     position: relative;
     top: -60px;
     left: -40px;
@@ -150,7 +150,7 @@
     top: 1em; }
 
   .collection .collection-item.active, .table-of-contents a.active {
-    background-color: whitesmoke;
+    background-color: #fff;
     border-left: 4px solid #4ea443;
     color: #000; }
 
@@ -191,7 +191,7 @@
     padding: 0.5em;
     font-family: "Tempus Sans ITC", sans-serif;
     color: #000;
-    background-color: whitesmoke; }
+    background-color: #fff; }
 
   .btn {
     background-color: #4ea443;
@@ -226,7 +226,7 @@
     position: relative;
     padding: 1em;
     background-color: #4ea443;
-    color: whitesmoke; }
+    color: #fff; }
 
   footer address {
     font-style: normal; }
@@ -255,7 +255,7 @@
     z-index: 80; }
 
   .sharenav a {
-    color: whitesmoke;
+    color: #fff;
     opacity: 1; }
 
   .sharenav li {
@@ -270,7 +270,7 @@
     padding-right: 2em; }
 
   .sharenav a {
-    color: whitesmoke; }
+    color: #fff; }
 
   .btnpad {
     margin-top: 1rem; } }

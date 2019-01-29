@@ -22,12 +22,12 @@ create_data_file "src/_data/settings.yml", :yaml,
 create_post "src/index.md" do
   frontmatter :yaml, {
     title: dato.home.title,
-    seo_meta_tags: dato.home.seo_meta_tags,
     image: dato.home.image.url(h: 500, fm: :png),
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
     image2: dato.home.second_image.url(h: 500, fm: :png),
     layout: 'home',
+    seo_meta_tags: dato.home.seo_meta_tags,
     redirect_from: "/dc-event-production-services",
   }
 end

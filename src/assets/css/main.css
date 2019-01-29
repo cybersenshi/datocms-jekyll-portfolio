@@ -18,7 +18,8 @@
     font-family: "Josefin Sans", sans-serif; }
 
   body {
-    font-size: large; }
+    font-size: large;
+    background-image: url("https://www.transparenttextures.com/patterns/grey-washed-wall.png"); }
 
   a {
     color: #4ea443;
@@ -70,7 +71,7 @@
     box-shadow: none; }
 
   .mainnav a {
-    color: #fff;
+    color: whitesmoke;
     opacity: 1; }
 
   .mainnav ul {
@@ -89,14 +90,14 @@
   .menupad {
     padding: 1em;
     background-color: #4ea443;
-    color: #fff; }
+    color: whitesmoke; }
 
   ul.dropdown-content {
     padding-left: 0px;
     border-radius: 0px; }
 
   .dropdown-content li > a, .dropdown-content li > span {
-    background-color: #fff; }
+    background-color: whitesmoke; }
 
   .sidenav li > a {
     font-family: "Tempus Sans ITC", sans-serif;
@@ -110,7 +111,7 @@
     max-width: 50%;
     padding-top: 10px;
     padding-left: 30px;
-    background-color: #fff;
+    background-color: whitesmoke;
     position: relative;
     top: -60px;
     left: -40px;
@@ -150,7 +151,7 @@
     top: 1em; }
 
   .collection .collection-item.active, .table-of-contents a.active {
-    background-color: #fff;
+    background-color: whitesmoke;
     border-left: 4px solid #4ea443;
     color: #000; }
 
@@ -191,7 +192,7 @@
     padding: 0.5em;
     font-family: "Tempus Sans ITC", sans-serif;
     color: #000;
-    background-color: #fff; }
+    background-color: whitesmoke; }
 
   .btn {
     background-color: #4ea443;
@@ -226,7 +227,7 @@
     position: relative;
     padding: 1em;
     background-color: #4ea443;
-    color: #fff; }
+    color: whitesmoke; }
 
   footer address {
     font-style: normal; }
@@ -255,7 +256,7 @@
     z-index: 80; }
 
   .sharenav a {
-    color: #fff;
+    color: whitesmoke;
     opacity: 1; }
 
   .sharenav li {
@@ -270,7 +271,7 @@
     padding-right: 2em; }
 
   .sharenav a {
-    color: #fff; }
+    color: whitesmoke; }
 
   .btnpad {
     margin-top: 1rem; } }

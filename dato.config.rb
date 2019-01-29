@@ -94,9 +94,9 @@ create_post "src/portfolio.md" do
   }
 
   dato.portfolio.gallery.each do |image|
-  image.title   # => "We love our clients"
-  image.url     # => "https://www.datocms-assets.com/123/12345-heart.png"
-end
+    image.title   # => "We love our clients"
+    image.url     # => "https://www.datocms-assets.com/123/12345-heart.png"
+  end
 
   content dato.service.text
 end

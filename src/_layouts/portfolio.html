@@ -14,27 +14,12 @@ layout: default
       {{ page.content }}
 
     <ul class="gallery">
-      <li>
-        <img class="materialboxed" data-caption="" width="250" height="150" src="/assets/images/foilo/vv.jpg" />
-      </li>
-      <li>
-        <img class="materialboxed" data-caption="" width="250" height="150" src="/assets/images/foilo/botanic.jpg" />
-      </li>
-      <li>
-        <img class="materialboxed" data-caption="" width="250" height="150" src="/assets/images/foilo/corcoran.jpg" />
-      </li>
-      <li>
-        <img class="materialboxed lazy" data-caption="" width="250" height="150" data-src="/assets/images/foilo/mcm.jpg" />
-      </li>
-      <li>
-        <img class="materialboxed lazy" data-caption="" width="250" height="150" data-src="/assets/images/foilo/nhl_nye.jpg" />
-      </li>
-      <li>
-        <img class="materialboxed lazy" data-caption="" width="250" height="150" data-src="/assets/images/foilo/nike.jpg" />
-      </li>
+      {% for record in page.gallery %}
+        <li>
+          <img class="materialboxed lazy" data-caption="{{ record.title }}" width="250" height="150" data-src="{{ record.url }}">
+        </li>
+      {% endfor %}
     </ul>
 
-    {% for record in page.gallery %}
-        <img class="materialboxed" data-caption="{{ record.image.title }}" width="250" height="150" src="{{ record.image.url }}">
-    {% endfor %}
+
 </article>

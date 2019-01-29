@@ -21,7 +21,7 @@
     font-size: large; }
 
   a {
-    color: #57b64b;
+    color: #4ea443;
     opacity: 0.8; }
 
   a:hover {
@@ -84,11 +84,11 @@
     padding-left: 15px; }
 
   .mainnav li {
-    background-color: #57b64b; }
+    background-color: #4ea443; }
 
   .menupad {
     padding: 1em;
-    background-color: #57b64b;
+    background-color: #4ea443;
     color: #fff; }
 
   ul.dropdown-content {
@@ -147,17 +147,17 @@
 
   .collection .collection-item.active, .table-of-contents a.active {
     background-color: #fff;
-    border-left: 4px solid #57b64b;
+    border-left: 4px solid #4ea443;
     color: #000; }
 
   .collection a.collection-item {
-    color: #57b64b; }
+    color: #4ea443; }
 
   .table-of-contents a {
     height: unset; }
 
   .table-of-contents a:hover {
-    border-left: 4px solid #57b64b; }
+    border-left: 4px solid #4ea443; }
 
   .stickbar > .collection-item {
     padding-top: 0.5em;
@@ -170,10 +170,10 @@
     font-family: "FontAwesome";
     content: "";
     margin: 0 5px 0 -15px;
-    color: #57b64b; }
+    color: #4ea443; }
 
   hr {
-    height: 300px;
+    height: 60px;
     color: transparent;
     border-style: none; }
 
@@ -190,7 +190,7 @@
     background-color: #fff; }
 
   .btn {
-    background-color: #57b64b;
+    background-color: #4ea443;
     border-radius: 0px;
     box-shadow: none; }
 
@@ -198,19 +198,19 @@
     height: 300px; }
 
   .datepicker-date-display {
-    background-color: #57b64b; }
+    background-color: #4ea443; }
 
   .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
-    color: #57b64b; }
+    color: #4ea443; }
 
   input[type=text]:not(.browser-default):focus:not([readonly]) {
-    border-bottom: #57b64b;
-    box-shadow: 0 1px 0 0 #57b64b; }
+    border-bottom: #4ea443;
+    box-shadow: 0 1px 0 0 #4ea443; }
 
   footer {
     position: relative;
     padding: 1em;
-    background-color: #57b64b;
+    background-color: #4ea443;
     color: #fff; }
 
   footer address {

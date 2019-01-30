@@ -274,7 +274,7 @@
 
   .btnpad {
     margin-top: 1rem; } }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 38em) {
   .mainnav {
     display: none;
     visibility: none; }

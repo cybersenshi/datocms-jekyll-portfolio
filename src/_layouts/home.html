@@ -23,6 +23,18 @@ layout: default
   </div>
 </div>
 
+<script>
+  var quotes = [
+  {% for record in page.testimonial %}
+    <h4>
+      {{ record.quote }}
+    </h4>
+      {{ record.name }}
+  {% endfor %}
+  ];
+  $('#quoteholder').append(quotes[Math.floor(Math.random() * quotes.length)]);
+</script>
+
 <div class="container quote">
   <span id="quoteholder" class="quoteholder"></span>
 </div><!-- /quote container -->

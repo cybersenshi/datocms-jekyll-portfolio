@@ -9,6 +9,14 @@ social_profiles = dato.social_profiles.map do |profile|
   }
 end
 
+# iterate over all the `social_profile` item types
+quotes = dato.testimonials.map do |testimonial|
+  {
+    quote: testimonial.quote,
+    name: testimonial.name,
+  }
+end
+
 # Create a YAML data file to store global data about the site
 create_data_file "src/_data/settings.yml", :yaml,
   name: dato.site.global_seo.site_name,
@@ -27,6 +35,7 @@ create_post "src/index.md" do
     what: dato.home.what_we_do,
     image2: dato.home.second_image.url(h: 600, fm: :png),
     layout: 'home',
+    testimonial: quotes,
     seo_meta_tags: dato.home.seo_meta_tags,
     redirect_from: "/dc-event-production-services",
   }

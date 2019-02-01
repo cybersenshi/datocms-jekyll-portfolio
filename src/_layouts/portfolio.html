@@ -14,9 +14,14 @@ layout: default
       {{ page.content }}
 
     <ul class="gallery">
-      {% for record in page.gallery %}
+      {% for record in page.land_gallery %}
         <li>
-          <img class="materialboxed lazy" data-caption="{{ record.title }}" width="250" height="150" data-src="{{ record.url }}">
+          <img class="materialboxed lazy" data-caption="{{ record.title }}" width="350" height="250" data-src="{{ record.url }}">
+        </li>
+      {% endfor %}
+      {% for record in page.port_gallery %}
+        <li>
+          <img class="materialboxed lazy" data-caption="{{ record.title }}" width="250" height="350" data-src="{{ record.url }}">
         </li>
       {% endfor %}
     </ul>

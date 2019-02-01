@@ -88,7 +88,8 @@ create_post "src/portfolio.md" do
     image: dato.portfolio.image.url(h: 500, fm: :png),
     layout: 'portfolio',
     permalink: /portfolio/,
-    gallery: dato.portfolio.gallery.to_hash,
+    land_gallery: dato.portfolio.landscape_gallery.to_hash,
+    port_gallery: dato.portfolio.portrait_gallery.to_hash,
     seo_settings: dato.portfolio.seo_settings,
     }
 

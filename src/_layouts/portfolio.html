@@ -19,6 +19,8 @@ layout: default
           <img class="materialboxed lazy" data-caption="{{ record.title }}" width="350" height="250" data-src="{{ record.url }}">
         </li>
       {% endfor %}
+    </ul>
+    <ul>
       {% for record in page.port_gallery %}
         <li>
           <img class="materialboxed lazy" data-caption="{{ record.title }}" width="250" height="350" data-src="{{ record.url }}">

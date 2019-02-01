@@ -9,7 +9,6 @@ social_profiles = dato.social_profiles.map do |profile|
   }
 end
 
-# iterate over all the `social_profile` item types
 quotes = dato.testimonials.map do |testimonial|
   {
     quote: testimonial.quote,

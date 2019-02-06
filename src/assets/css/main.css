@@ -25,8 +25,7 @@
     opacity: 0.8; }
 
   .topper {
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-items: center;
     max-width: 1000px; }
 
   a:hover {
@@ -106,7 +105,8 @@
 
   .lift {
     position: relative;
-    top: -60px; }
+    top: -200px;
+    background-color: #fdfdfd; }
 
   article {
     padding-bottom: 2em; }

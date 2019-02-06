@@ -104,6 +104,10 @@
     font-family: "Tempus Sans ITC", sans-serif;
     font-size: 18px; }
 
+  .lift {
+    position: relative;
+    top: -60px; }
+
   article {
     padding-bottom: 2em; }
 

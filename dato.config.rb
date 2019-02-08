@@ -22,7 +22,7 @@ create_data_file "src/_data/settings.yml", :yaml,
 create_post "src/index.md" do
   frontmatter :yaml, {
     title: dato.home.title,
-    image: dato.home.image.url(h: 600, fm: :png),
+    image: dato.home.image.url(h: 400, fm: :png),
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
     image2: dato.home.second_image.url(h: 600, fm: :png),

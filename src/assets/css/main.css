@@ -149,12 +149,18 @@
     padding: 1em; }
 
   .services {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 100%;
     align-items: center;
     align-content: center; }
+
+  .overlap {
+    position: absolute;
+    bottom: 0px;
+    left: 0px; }
 
   .sidebarfixed {
     grid-template-columns: 30% auto; }

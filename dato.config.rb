@@ -17,8 +17,7 @@ create_data_file "src/_data/settings.yml", :yaml,
   logo: dato.header.logo.url,
   language: dato.site.locales.first,
   social_profiles: social_profiles,
-  favicon_meta_tags: dato.site.favicon_meta_tags,
-  affiliate: dato.footer.affiliations.to_hash,
+  favicon_meta_tags: dato.site.favicon_meta_tags
 
 create_post "src/index.md" do
   frontmatter :yaml, {
@@ -29,6 +28,7 @@ create_post "src/index.md" do
     image2: dato.home.second_image.url(h: 600, fm: :png),
     layout: 'home',
     testimonial: quotes,
+    affiliate: dato.footer.affiliations.to_hash,
     seo_meta_tags: dato.home.seo_meta_tags,
     redirect_from: "/dc-event-production-services",
   }

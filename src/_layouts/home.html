@@ -40,9 +40,9 @@ layout: default
 
 <div class="container">
   <ul>
-    {% for record in site.affiliate %}
+    {% for record in page.affiliate %}
       <li>
-        <img src="{{ record.url}}" alt="{{ record.alt }}">
+        <img src="{{ record.url }}" alt="{{ record.alt }}">
       </li>
     {% endfor %}
   </ul>

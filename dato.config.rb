@@ -17,7 +17,8 @@ create_data_file "src/_data/settings.yml", :yaml,
   logo: dato.header.logo.url,
   language: dato.site.locales.first,
   social_profiles: social_profiles,
-  favicon_meta_tags: dato.site.favicon_meta_tags
+  favicon_meta_tags: dato.site.favicon_meta_tags,
+  affiliate: dato.footer.affiliations.to_hash,
 
 create_post "src/index.md" do
   frontmatter :yaml, {

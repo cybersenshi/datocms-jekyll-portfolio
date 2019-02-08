@@ -38,3 +38,13 @@ layout: default
 <div class="container quote">
   <span id="quoteholder" class="quoteholder"></span>
 </div><!-- /quote container -->
+
+<div class="container">
+  <ul>
+    {% for record in site.affiliate %}
+      <li>
+        <img src="{{ record.url}}" alt="{{ record.alt }}">
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -18,7 +18,8 @@
     font-family: "Josefin Sans", sans-serif; }
 
   body {
-    font-size: large; }
+    font-size: large;
+    background-color: #fdfdfd; }
 
   a {
     color: #009900;

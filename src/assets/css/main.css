@@ -146,8 +146,7 @@
     grid-template-columns: auto auto;
     grid-template-areas: "mainleft mainright";
     grid-column-gap: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em; }
+    padding: 1em; }
 
   .sidebarfixed {
     grid-template-columns: 30% auto; }
@@ -229,7 +228,7 @@
     border-bottom: #009900;
     box-shadow: 0 1px 0 0 #009900; }
 
-  footer {
+  footer, .subfoot {
     position: relative;
     padding: 1em;
     background-color: #009900;

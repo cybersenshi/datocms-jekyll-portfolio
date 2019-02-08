@@ -8,13 +8,41 @@ layout: default
   </div>
 </div>
 
-<div class="container sidebyside lift">
-  <span class="mainleft">
-    {{ page.who }}
-  </span>
-  <span class="mainright">
-    {{ page.what }}
-  </span>
+<div class="container">
+  <div class="sidebyside lift">
+    <span class="mainleft">
+      {{ page.who }}
+    </span>
+    <span class="mainright">
+      {{ page.what }}
+    </span>
+  </div>
+  <ul>
+    <li>
+      <img src="/assets/images/ent.jpg" width="200px" alt="">
+      <span class="overlap">
+        Concerts
+      </span>
+    </li>
+    <li>
+      <img src="/assets/images/livestream.jpg" alt="">
+      <span class="overlap">
+        Livestreams
+      </span>
+    </li>
+    <li>
+      <img src="/assets/images/sport.jpg" alt="">
+      <span class="overlap">
+        Sporting Events
+      </span>
+    </li>
+    <li>
+      <img src="/assets/images/award.jpg" alt="">
+      <span class="overlap">
+        Award Ceremonies
+      </span>
+    </li>
+  </ul>
 </div>
 
 <div class="parallax-container">
@@ -39,7 +67,7 @@ layout: default
   <span id="quoteholder" class="quoteholder"></span>
 </div><!-- /quote container -->
 
-<div class="container">
+<div class="container subfoot">
   <ul class="affiliate">
     {% for record in page.affiliate %}
       <li>

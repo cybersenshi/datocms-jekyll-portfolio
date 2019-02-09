@@ -319,7 +319,7 @@
     font-size: 1.2rem;
     line-height: 1.5rem; }
 
-  .box {
+  .headbox {
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "headleft" "headright"; }

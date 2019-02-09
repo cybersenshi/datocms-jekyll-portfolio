@@ -164,6 +164,10 @@
     position: relative;
     margin-right: 10px; }
 
+  .services img {
+    width: 400px;
+    height: 250px; }
+
   .overlap {
     position: absolute;
     bottom: 20px;
@@ -257,8 +261,7 @@
     margin-right: 2em;
     padding: 1em;
     background-color: #009900;
-    color: #fdfdfd;
-    text-align: right; }
+    color: #fdfdfd; }
 
   footer address {
     font-style: normal; }

@@ -155,15 +155,19 @@
     flex-wrap: wrap;
     flex-basis: 100%;
     align-items: center;
-    align-content: center; }
+    align-content: center;
+    margin-top: -110px;
+    margin-left: 1em;
+    margin-right: 1em; }
 
   .services li {
     position: relative; }
 
   .overlap {
     position: absolute;
-    bottom: 0px;
-    left: 0px; }
+    bottom: 10px;
+    left: 0px;
+    background-color: #fdfdfd; }
 
   .sidebarfixed {
     grid-template-columns: 30% auto; }

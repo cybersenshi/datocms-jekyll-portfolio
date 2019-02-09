@@ -45,7 +45,7 @@ $bodyfont: 'Josefin Sans', sans-serif
   .mainright
     grid-area: mainright
 
-  .box
+  .headbox
     display: grid
     grid-template-columns: auto
     grid-template-areas: "headleft headright"
@@ -55,6 +55,7 @@ $bodyfont: 'Josefin Sans', sans-serif
 
   header h1
     top: -45px
+    margin: 0
 
   h2
     margin: 0
@@ -149,7 +150,8 @@ $bodyfont: 'Josefin Sans', sans-serif
     grid-template-columns: auto auto
     grid-template-areas: "mainleft mainright"
     grid-column-gap: 3em
-    padding: 1em
+    padding-left: 4rem
+    padding-right: 4rem
 
   .services
     display: flex
@@ -159,7 +161,7 @@ $bodyfont: 'Josefin Sans', sans-serif
     align-items: center
     align-content: center
 
-  .services img
+  .services li
     position: relative
 
   .overlap

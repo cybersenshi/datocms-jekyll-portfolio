@@ -1,7 +1,7 @@
 $nomadgreen: #009900
 $black: #000
 $gold: #0099cc
-$white: #fff
+$white: #fdfdfd
 $headfont: 'Tempus Sans ITC', sans-serif
 $bodyfont: 'Josefin Sans', sans-serif
 
@@ -24,6 +24,7 @@ $bodyfont: 'Josefin Sans', sans-serif
 
   body
     font-size: large
+    background-color: $white
 
   a
     color: $nomadgreen
@@ -44,7 +45,7 @@ $bodyfont: 'Josefin Sans', sans-serif
   .mainright
     grid-area: mainright
 
-  .box
+  .headbox
     display: grid
     grid-template-columns: auto
     grid-template-areas: "headleft headright"
@@ -53,11 +54,8 @@ $bodyfont: 'Josefin Sans', sans-serif
     font-family: $headfont
 
   header h1
-    margin: 0
-    padding-left: 20px
-    position: relative
     top: -45px
-
+    margin: 0
 
   h2
     margin: 0
@@ -107,6 +105,14 @@ $bodyfont: 'Josefin Sans', sans-serif
     font-family: $headfont
     font-size: 18px
 
+  .brand-logo img
+    width: 300px
+
+  .lift
+    position: relative
+    top: -150px
+    background-color: $white
+
   article
     padding-bottom: 2em
 
@@ -144,8 +150,35 @@ $bodyfont: 'Josefin Sans', sans-serif
     grid-template-columns: auto auto
     grid-template-areas: "mainleft mainright"
     grid-column-gap: 3em
-    padding-top: 1em
-    padding-bottom: 1em
+    padding-left: 4rem
+    padding-right: 4rem
+
+  .services
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    flex-basis: 100%
+    align-items: center
+    align-content: center
+    margin-top: -110px
+    margin-left: 1em
+    margin-right: 1em
+
+  .services li
+    position: relative
+    margin-right: 10px
+
+  .services img
+    width: 400px
+    height: 250px
+
+  .overlap
+    position: absolute
+    bottom: 20px
+    left: 0px
+    margin: 0
+    padding: 0.5em
+    background-color: $white
 
   .sidebarfixed
     grid-template-columns: 30% auto
@@ -227,14 +260,21 @@ $bodyfont: 'Josefin Sans', sans-serif
     border-bottom: $nomadgreen
     box-shadow: 0 1px 0 0 $nomadgreen
 
-  footer
+  footer, .subfoot
     position: relative
+    margin-right: 2em
     padding: 1em
     background-color: $nomadgreen
     color: $white
 
   footer address
     font-style: normal
+
+  .footleft
+    text-align: right
+
+  .footright
+    text-align: left
 
   .affilate
     display: flex
@@ -244,6 +284,9 @@ $bodyfont: 'Josefin Sans', sans-serif
     align-items: center
     align-content: center
     justify-content: space-around
+
+  .affilate li
+    padding: 2rem
 
   .embed
     width: 350px
@@ -292,7 +335,7 @@ $bodyfont: 'Josefin Sans', sans-serif
     font-size: 1.2rem
     line-height: 1.5rem
 
-  .box
+  .headbox
     display: grid
     grid-template-columns: auto
     grid-template-areas: "headleft" "headright"

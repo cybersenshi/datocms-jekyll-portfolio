@@ -1,7 +1,3 @@
-# Read all the details about the commands available in this file here:
-# https://github.com/datocms/ruby-datocms-client/blob/master/docs/dato-cli.md
-
-# iterate over all the `social_profile` item types
 social_profiles = dato.social_profiles.map do |profile|
   {
     url: profile.url,
@@ -9,7 +5,13 @@ social_profiles = dato.social_profiles.map do |profile|
   }
 end
 
-# Create a YAML data file to store global data about the site
+quotes = dato.testimonials.map do |testimonial|
+  {
+    quote: testimonial.quote,
+    name: testimonial.name,
+  }
+end
+
 create_data_file "src/_data/settings.yml", :yaml,
   name: dato.site.global_seo.site_name,
   logo: dato.header.logo.url,
@@ -17,16 +19,16 @@ create_data_file "src/_data/settings.yml", :yaml,
   social_profiles: social_profiles,
   favicon_meta_tags: dato.site.favicon_meta_tags
 
-# Create a markdown file with the SEO settings coming from the `home` item
-# type stored in DatoCMS
 create_post "src/index.md" do
   frontmatter :yaml, {
     title: dato.home.title,
-    image: dato.home.image.url(h: 600, fm: :png),
+    image: dato.home.image.url(h: 400, fm: :png),
     who: dato.home.who_we_are,
     what: dato.home.what_we_do,
     image2: dato.home.second_image.url(h: 600, fm: :png),
     layout: 'home',
+    testimonial: quotes,
+    affiliate: dato.footer.affiliations.to_hash,
     seo_meta_tags: dato.home.seo_meta_tags,
     redirect_from: "/dc-event-production-services",
   }

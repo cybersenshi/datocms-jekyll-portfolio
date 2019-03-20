@@ -8,13 +8,53 @@ layout: default
   </div>
 </div>
 
-<div class="container sidebyside">
-  <span class="mainleft">
-    {{ page.who }}
-  </span>
-  <span class="mainright">
-    {{ page.what }}
-  </span>
+<div class="container">
+  <div class="sidebyside lift">
+    <span class="mainleft">
+      {{ page.who }}
+    </span>
+    <span class="mainright">
+      {{ page.what }}
+    </span>
+  </div>
+  <ul class="services">
+    <li>
+      <img src="https://www.datocms-assets.com/8879/1549055661-img7248.jpg?w=400&h=250&fm=png" alt="">
+      <h5 class="overlap">
+        Entertainment
+      </h5>
+    </li>
+    <li>
+      <img src="https://www.datocms-assets.com/8879/1549700868-livestream.jpg?w=400&h=250&fm=png" alt="">
+      <h5 class="overlap">
+        Livestreams
+      </h5>
+    </li>
+    <li>
+      <img src="https://www.datocms-assets.com/8879/1549700901-sport.jpg?w=400&h=250&fm=png" alt="">
+      <h5 class="overlap">
+        Sporting Events
+      </h5>
+    </li>
+    <li>
+      <img src="https://www.datocms-assets.com/8879/1549700444-award.jpg?w=400&h=250&fm=png" alt="">
+      <h5 class="overlap">
+        Non-Profit/Galas
+      </h5>
+    </li>
+    <li>
+      <img src="https://www.datocms-assets.com/8879/1551066533-exelis-2-1.jpeg?w=400&h=250&fm=png" alt="">
+      <h5 class="overlap">
+        Corporate
+      </h5>
+    </li>
+    <li>
+      <img src="https://www.datocms-assets.com/8879/1549700395-20140827100446richtone-hdr.jpg?w=400&h=250&fm=png" alt="">
+      <h5 class="overlap">
+      Conference and Meeting Support
+      </h5>
+    </li>
+  </ul>
 </div>
 
 <div class="parallax-container">
@@ -23,6 +63,28 @@ layout: default
   </div>
 </div>
 
+<script>
+  var quotes = [
+  {% for record in page.testimonial %}
+    <h4>
+      {{ record.quote }}
+    </h4>
+      {{ record.name }}
+  {% endfor %}
+  ];
+  $('#quoteholder').append(quotes[Math.floor(Math.random() * quotes.length)]);
+</script>
+
 <div class="container quote">
   <span id="quoteholder" class="quoteholder"></span>
 </div><!-- /quote container -->
+
+<div class="subfoot">
+  <ul class="affilate">
+    {% for record in page.affiliate %}
+      <li>
+        <img src="{{ record.url }}" height="50px" alt="{{ record.alt }}">
+      </li>
+    {% endfor %}
+  </ul>
+</div>
